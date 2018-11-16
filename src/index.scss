@@ -485,6 +485,33 @@ body {
   cursor: pointer;
 }
 
+// .team-info.active{
+//   display: inline-block;
+// }
+.team-info{
+  width: 600px;
+  height: 300px;
+  position:absolute;
+  border: $border-color 2px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  top: -50vh;
+  z-index: 100;
+  padding: 20px;
+  display: none;
+}
+.westbro{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.github{
+  padding-bottom: 10px;
+}
+.westbro-explain{
+  padding-bottom: 20px;
+}
+
 // 전구 - 서형
 .light-bulb-box{
   height: 200px;
