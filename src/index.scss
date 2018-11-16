@@ -194,7 +194,6 @@ body {
   width: 100%;
   top: 22px;
   height: 30px;
-  border: red 1px solid;
 }
 .mood .hands img {
   position: absolute;
@@ -295,6 +294,35 @@ body {
   top: 245px;
   width: 250px;
 }
+// 할일 리스트- 연제
+.todo{
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+}
+.calender{
+  width:190px;
+}
+//플러그
+.plug{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.plug-img{
+  width: 200px;
+}
+.switch1, .switch2{
+  top: 25px;
+  width: 14px;
+  position: absolute;
+}
+.switch1{
+  left: 55px;
+}
+.switch2{
+  left: 85px;
+}
 // 테마 스위치 - 서형
 .theme-switch-box {
   position: absolute;
@@ -339,7 +367,7 @@ body {
   width: 220px;
   height: 500px;
   position: absolute;
-  right: 20vw;
+  right: 15vw;
   top: 10vh;
   .coin {
     width: 46px;
