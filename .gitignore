@@ -1,6 +1,7 @@
 # Parcel
 .cache/
 dist/
+node_modules/
 
 # Logs
 logs
