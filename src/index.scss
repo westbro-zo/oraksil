@@ -136,6 +136,7 @@ body {
 
 // 주크박스 - 서형
 .song-title-box {
+  z-index: 10;
   position: absolute;
   width: 100%;
   top: 30vh;
@@ -160,7 +161,6 @@ body {
     padding: 15px;
     width: 100%;
     max-width: 300px;
-    z-index: 10;
     margin: 0 25px;
     box-sizing: border-box;
     border: 2px solid $border-color;
@@ -217,5 +217,29 @@ body {
     height: 20px;
     border-radius: 2px;
   }
+}
 
+.insert-coin-box{
+  background: url('https://feelsfm.co.uk/static/media/penny-body.ceb74a62.png');
+  background-repeat: no-repeat;
+  border: 1px solid red;
+  background-size: contain;
+  width: 220px;
+  height: 500px;
+  position: absolute;
+  right: 25vw;
+  top: 10vh;
+  .coin{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    // background: url('./img/coin.png');
+    }
+}
+
+
+@media (max-width : 768px){
+  .insert-coin-box{
+    display: none;
+  }
 }
