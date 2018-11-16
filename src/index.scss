@@ -267,7 +267,34 @@ body {
     }
   }
 }
-
+// 레코드 -연제
+.record{
+  background-image: url('https://feelsfm.co.uk/static/media/record.69452d4c.png');
+  // background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -339px 120px;
+  width:295px;
+  height: 640px;
+  left: 0;
+  bottom:0;
+  background-size: 634px;
+  position: absolute;
+}
+.on-off{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 185px;
+  left: 10px;
+  z-index: 100;
+  background-image: url('../img/btn-sprite.png');
+  background-position: -10px;
+}
+.arm{
+  position: absolute;
+  top: 245px;
+  width: 250px;
+}
 // 테마 스위치 - 서형
 .theme-switch-box {
   position: absolute;
