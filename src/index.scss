@@ -233,7 +233,8 @@ body {
     border: 1px solid black;
     width: 100px;
     height: 100px;
-    // background: url('./img/coin.png');
+    background: url('./img/coin.png');
+    background-size: contain;
     }
 }
 
