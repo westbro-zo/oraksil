@@ -12,6 +12,8 @@ const track3 = document.querySelector('.track3');
 const track4 = document.querySelector('.track4');
 const songTitle = document.querySelector('.song-title');
 const onOff = document.querySelector('.on-off');
+const infoEl = document.querySelector('.emergency-box');
+const teamInfo = document.querySelector('.team-info');
 let degree = 30;
 let lightOn = true;
 const mp3 = [track1, track2, track3, track4]
@@ -82,3 +84,27 @@ function goSnakeGame() {
 function getRandomTrack(){
   return Math.floor(Math.random()*3);
 }
+
+
+// 할일 목록-연제
+const CalenderEl = document.querySelector('.calender')
+CalenderEl.addEventListener('click', e => {
+  e.preventDefault();
+  goTodoList();
+})
+function goTodoList(){
+  window.open("https://nifty-wiles-1e30e5.netlify.com/", '_blank');
+}
+// 팀원 소개 -연제
+infoEl.addEventListener('click', e =>{
+  e.preventDefault();
+  teamInfo.style.display="block";
+})
+
+
+teamInfo.addEventListener('click', e =>{
+  e.preventDefault();
+  e.stopPropagation();
+  console.log('눌림')
+  teamInfo.style.display="none";
+})

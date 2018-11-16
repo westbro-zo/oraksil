@@ -320,8 +320,9 @@ body {
   top: 1vh;
   right: 1vh;
 }
-.calender {
-  width: 190px;
+.calender{
+  width:190px;
+  cursor: pointer;
 }
 //플러그
 .plug {
@@ -516,6 +517,34 @@ body {
   width: 206px;
   height: 189px;
   cursor: pointer;
+}
+
+// .team-info.active{
+//   display: inline-block;
+// }
+.team-info{
+  width: 600px;
+  height: 300px;
+  position:absolute;
+  border: $border-color 2px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  top: -50vh;
+  z-index: 200;
+  padding: 20px;
+  display: none;
+  // display: block;
+}
+.westbro{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.github{
+  padding-bottom: 10px;
+}
+.westbro-explain{
+  padding-bottom: 20px;
 }
 
 // 전구 - 서형
