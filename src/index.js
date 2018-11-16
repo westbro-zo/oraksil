@@ -1,22 +1,6 @@
 import '@babel/polyfill' // 이 라인을 지우지 말아주세요!
 
-import axios from 'axios'
-
-const api = axios.create({
-  baseURL: process.env.API_URL
-})
-
-api.interceptors.request.use(function (config) {
-  const token = localStorage.getItem('token')
-  if (token) {
-    config.headers = config.headers || {}
-    config.headers['Authorization'] = 'Bearer ' + token
-  }
-  return config
-});
-
 const templates = {
-
 }
 
 const rootEl = document.querySelector('.root')
@@ -28,3 +12,15 @@ const rootEl = document.querySelector('.root')
 // 4. 내용 채우기
 // 5. 이벤트 리스너 등록하기
 // 6. 템플릿을 문서에 삽입
+
+// 할일 목록
+const CalenderEl = document.querySelector('.calender')
+CalenderEl.addEventListener('click', e => {
+  console.log(CalenderEl)
+  e.preventDefault();
+  alert("test")
+  goTodoList();
+ })
+ function goTodoList(){
+  window.open("https://nifty-wiles-1e30e5.netlify.com/", '_blank');
+ }
