@@ -308,7 +308,8 @@ body {
 .plug{
   position: absolute;
   top:0;
-  left: 0;
+  left: 20px;
+  z-index: -1;
 }
 .plug-img{
   width: 200px;
