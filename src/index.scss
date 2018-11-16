@@ -143,7 +143,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  .title{
+  .title {
     text-align: center;
     color: $border-color;
     font-weight: bold;
@@ -151,7 +151,7 @@ body {
     text-transform: uppercase;
     font-size: 0.8em;
     margin: 0.5em 0;
-    .us{
+    .us {
       font-weight: normal;
       font-style: italic;
     }
@@ -181,4 +181,41 @@ body {
       font-style: italic;
     }
   }
+}
+
+// 테마 스위치 - 서형
+.theme-switch-box {
+  position: absolute;
+  top: 50vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .theme-switch {
+    background: url("https://feelsfm.co.uk/static/media/theme-switch.4f030fad.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    position: relative
+  }
+  .theme-pointer{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 32%;
+    left: 21%;
+    text-align: center;
+    // transform: rotateZ(30deg);
+  }
+  .theme-pointer::after{
+    background-color: $border-color;
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 3px;
+    height: 20px;
+    border-radius: 2px;
+  }
+
 }
