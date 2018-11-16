@@ -1,19 +1,90 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-$main-color: #79ffce;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+$mint-color: #79ffce;
+$yellow-color: #ffeb9f;
+$border-color: #2d53f7;
+$input-color: #1da8fd;
 
 /* 스타일 초기화 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,31 +96,89 @@ time, mark, audio, video {
 /* 우선 순위가 같을 때는 나중에 선언한 것이 남는다. 그래서 reset이 남는 것 */
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
 }
 /* block에 익스플로러 11호환 문제 때문에 main을 추가 할 것 */
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 /* 목록 사이의 기호를 생략한다. ol은 음성브라우저에서 읽어줄 때는 문제가 생긴다. */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* cell spacing을 없애려고border spaceing으로 없앤다.
 셀간의 간격을 융합을 하기 위해서 border-collappse로 설정한다. */
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-html{
+html {
   position: relative;
 }
 
 body {
-  background-color: $main-color;
+  background-color: $mint-color;
 }
 
+// 주크박스 - 서형
+.song-title-box {
+  position: absolute;
+  width: 100%;
+  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  .title{
+    text-align: center;
+    color: $border-color;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin: 0.5em 0;
+    .us{
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  .song-title-input {
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    z-index: 10;
+    margin: 0 25px;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    background-color: $yellow-color;
+    border-radius: 5px;
+    box-shadow: 0 10px $input-color;
+    input[type="text"] {
+      text-align: center;
+      border: 2px solid $border-color;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 12px;
+      padding: 10px 0;
+    }
+    input[type="text"]::placeholder {
+      font-size: 12px;
+      color: $input-color;
+      font-style: italic;
+    }
+  }
+}
