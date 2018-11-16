@@ -53,3 +53,85 @@ body {
   background-color: $main-color;
 }
 
+/* 게임 보이-연제 */
+
+.game-boy{
+  height:92px;
+  background-image: url('https://feelsfm.co.uk/static/media/gameboy.3531b151.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: calc(50% + 150px);
+  left: 18vw;
+  width: 200px;
+  height: 328px;
+  cursor: pointer;
+}
+
+.loading-screen{
+  position: absolute;
+  top: 40px;
+  left: 52px;
+  width: 100px;
+  height: 89px;
+  background-color: #bdae58;
+  border: 1px solid #2d53f7;
+}
+
+.switch{
+  background: #ffeb9f;
+  border: 2px solid #2d53f7;
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  left: 30px;
+  top: -10px;
+  border-radius: 2px 0 0 2px;
+}
+
+.loading-head{
+  text-align: center;
+  color: #8a891f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* 기분 표시기계-연제 */
+
+.mood{
+  width: 165px;
+  height: 120px;
+  background-image: url('https://feelsfm.co.uk/static/media/mood.b2c5c9da.png');
+  background-size: contain;
+  position: absolute;
+  left: 20vw;
+}
+.hands{
+  position: absolute;
+  width: 100%;
+  top: 22px;
+  height: 30px;
+  border: red 1px solid;
+}
+.mood .hands img{
+  position: absolute;
+  opacity: 1;
+}
+.hand1{
+  width: 20px;
+  left: 37px
+}
+.hand2{
+  left: 74px;
+  width: 16px;
+}
+.hand3{
+  width: 20px;
+  left: 105px;
+}
+.btn{
+  position: absolute;
+  top: 67px;
+  left: 72px;
+  width:25px;
+}
